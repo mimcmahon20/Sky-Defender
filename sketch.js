@@ -115,3 +115,10 @@ function gameOver() {
   text("Press Enter to restart", 0, 50);
   pop();
 }
+
+function windowResized() {
+  w = windowWidth;
+  h = windowHeight;
+  resizeCanvas(windowWidth, windowHeight);
+  draw();
+}
